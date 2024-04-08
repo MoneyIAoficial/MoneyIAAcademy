@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Money IA Academy</title>
+<link rel="icon" href="https://scontent.ftow3-1.fna.fbcdn.net/v/t39.30808-6/435262700_7227555497371314_3067309467847185009_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH-DHNkLJ3ulsDriNXNHbpCpOMfL_0ZY1Gk4x8v_RljUUZYoCCC-HHe37uggqkNmkgC8aJD-r4u-SWVukXJXZua&_nc_ohc=X3-Xob5WAeAAb7rk2st&_nc_ht=scontent.ftow3-1.fna&oh=00_AfAF2K_vEdtRZeCn4N4dqukQ__WUlH2HBicMqLdVwa_A1g&oe=661A2345" type="image/x-icon"> <!-- Adicione o caminho para o seu favicon -->
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.lovepik.com/bg/20240105/Discover-the-Vibrant-Casino-Roulette-Background-at-Casino-Roue_2710301_wh860.jpg!/fw/860');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(66, 66, 66, 0.8);
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #757575;
+    color: #fff;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+</style>
+<script>
+var users = {
+    "moneyiaacademy@gmail.com": "123456",
+};
+
+function login() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    if (users.hasOwnProperty(username) && users[username] === password) {
+        window.location.href = "https://moneyiaoficial.github.io/MoneyIAAcademi/";
+    } else {
+        document.getElementById("error").innerHTML = "Login ou senha incorretos. Tente novamente.";
+    }
+}
+
+function openWhatsApp() {
+    // Substitua o número abaixo pelo número de WhatsApp desejado
+    var phoneNumber = "+5544998184969";
+    // Mensagem a ser enviada pelo WhatsApp
+    var message = "Quero meu acesso agora!";
+    // Construir o link do WhatsApp
+    var whatsappLink = "https://wa.me/" + phoneNumber + "/?text=" + encodeURIComponent(message);
+    // Redirecionar para o WhatsApp
+    window.location.href = whatsappLink;
+}
+</script>
+</head>
+<body>
+
+<div class="container">
+    <img src="https://scontent.ftow3-1.fna.fbcdn.net/v/t39.30808-6/435262700_7227555497371314_3067309467847185009_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeH-DHNkLJ3ulsDriNXNHbpCpOMfL_0ZY1Gk4x8v_RljUUZYoCCC-HHe37uggqkNmkgC8aJD-r4u-SWVukXJXZua&_nc_ohc=X3-Xob5WAeAAb7rk2st&_nc_ht=scontent.ftow3-1.fna&oh=00_AfAF2K_vEdtRZeCn4N4dqukQ__WUlH2HBicMqLdVwa_A1g&oe=661A2345" alt="Logo da Empresa" class="logo">
+    <h2>Login</h2>
+    <div id="error"></div>
+    <label for="username">E-mail:</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" name="password" required>
+    <button onclick="login()">Entrar</button>
+    <button onclick="openWhatsApp()">Peça seu login aqui</button>
+</div>
+
+</body>
+</html>
