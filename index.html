@@ -102,8 +102,15 @@ function openWhatsApp() {
     var message = "Quero meu acesso agora!";
     // Construir o link do WhatsApp
     var whatsappLink = "https://wa.me/" + phoneNumber + "/?text=" + encodeURIComponent(message);
-    // Redirecionar para o WhatsApp
-    window.location.href = whatsappLink;
+    // Criar um elemento de link
+    var linkElement = document.createElement('a');
+    linkElement.setAttribute('href', whatsappLink);
+    // Abrir o link em uma nova janela
+    linkElement.setAttribute('target', '_blank');
+    // Simular um clique no link
+    linkElement.click();
+}
+
 }
 </script>
 </head>
