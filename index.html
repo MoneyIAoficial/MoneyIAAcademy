@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -102,15 +103,8 @@ function openWhatsApp() {
     var message = "Quero meu acesso agora!";
     // Construir o link do WhatsApp
     var whatsappLink = "https://wa.me/" + phoneNumber + "/?text=" + encodeURIComponent(message);
-    // Criar um elemento de link
-    var linkElement = document.createElement('a');
-    linkElement.setAttribute('href', whatsappLink);
-    // Abrir o link em uma nova janela
-    linkElement.setAttribute('target', '_blank');
-    // Simular um clique no link
-    linkElement.click();
-}
-
+    // Redirecionar para o WhatsApp
+    window.location.href = whatsappLink;
 }
 </script>
 </head>
@@ -127,6 +121,3 @@ function openWhatsApp() {
     <button onclick="login()">Entrar</button>
     <button onclick="openWhatsApp()">Peça seu login aqui</button>
 </div>
-
-</body>
-</html>
